@@ -17,21 +17,21 @@ Pizza.prototype.pizzaCost = function() {
   }
 
   if (this.meatPizza == "no-meat") {
-    pizzaPrice + 0;
+    pizzaPrice += 0;
   } else if (this.meatPizza == "pepperoni-meat") {
-    pizzaPrice + 1;
+    pizzaPrice += 1;
   } else if (this.meatPizza == "sausage-meat") {
-    pizzaPrice + 2;
+    pizzaPrice += 2;
   }
 
   if (this.veggiePizza == "no-veg") {
-    pizzaPrice + 0;
+    pizzaPrice += 0;
   } else if (this.veggiePizza == "olive-veg") {
-    pizzaPrice + 1;
+    pizzaPrice += 1;
   } else if (this.veggiePizza == "pepper-veg") {
-    pizzaPrice + 2;
+    pizzaPrice += 2;
   } else if (this.veggiePizza == "onion-veg") {
-    pizzaPrice + 3;
+    pizzaPrice += 3;
   }
   return pizzaPrice;
 }//end pizzaCost prototype
