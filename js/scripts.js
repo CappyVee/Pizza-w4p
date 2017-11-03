@@ -82,9 +82,7 @@ $(document).ready(function(){
 
     $(".listInfo").last().click(function(){
       $(".show-info").show();
-      $(".size-pizza").text(newPizza.pizzaText());
-      // $(".meat-pizza").text("with " + newPizza.meatPizza);
-      // $(".veggie-pizza").text("and " + newPizza.veggiePizza);
+      $(".pizza-info").text(newPizza.pizzaText());
     });//end click fxn
 
     $(".remove").click(function(){

@@ -27,8 +27,20 @@ _End of Week Four project. The goal is to use constructors and prototypes to rec
  Green Pepperoni            +$2
  Onion                      +$3
 
+ SPECS I DIDN'T THINK TO WRITE INITIALLY:
+ values for input selections need to be converted into something readable before being displayed. instead of "pizza-sm no-meat olive-veg" it should look like "You'll be having a small pizza with no meat and olives."
+
+ input          output
+
+ sm-pizza       "You'll be having a small pizza"
+
+ no-meat        " with no meat"
+
+ onion-veg      " and onions."
+
  example:
- LG Pepperoni and Green Pepper Pizza = $15
+ LG Pepperoni and Green Pepper Pizza cost = $15
+ string = "You'll be having a large pizza with pepperoni and green pepper"
 
  TODO LIST:
   Build form, make sure the script is identifying the inputs correctly
