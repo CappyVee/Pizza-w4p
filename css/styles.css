@@ -6,7 +6,17 @@ body {
   float: right;
 }
 
+form select {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
+#pizzadog {
+  float: left;
+  width: 45%;
+  margin-bottom: 10%;
+  margin-right: 5%;
+}
 
 .jumbotron {
   background-color: #e55965;

@@ -4,6 +4,38 @@ function Pizza(size, meat, veggie) {
   this.veggiePizza = veggie;
 }//end Pizza constructors
 
+Pizza.prototype.pizzaText = function() {
+  var infoText = "You'll be having"
+  if (this.sizePizza == "sm-pizza") {
+    infoText += " a small pizza"
+  } else if (this.sizePizza == "md-pizza") {
+    infoText += " a medium pizza";
+  } else if (this.sizePizza == "lg-pizza") {
+    infoText += " a large pizza";
+  } else if (this.sizePizza == "xl-pizza") {
+    infoText += " an extra large pizza";
+  }
+
+  if (this.meatPizza == "no-meat") {
+    infoText += " with no meat";
+  } else if (this.meatPizza == "pepperoni-meat") {
+    infoText += " with pepperoni";
+  } else if (this.meatPizza == "sausage-meat") {
+    infoText += " with sausage";
+  }
+
+  if (this.veggiePizza == "no-veg") {
+    infoText += " and no veggies.";
+  } else if (this.veggiePizza == "olive-veg") {
+    infoText += " and olives.";
+  } else if (this.veggiePizza == "pepper-veg") {
+    infoText += " and green peppers.";
+  } else if (this.veggiePizza == "onion-veg") {
+    infoText += " and onions.";
+  }
+  return infoText;
+}//end pizzaText prototype
+
 Pizza.prototype.pizzaCost = function() {
   var pizzaPrice = 0;
   if (this.sizePizza == "sm-pizza") {
@@ -50,9 +82,9 @@ $(document).ready(function(){
 
     $(".listInfo").last().click(function(){
       $(".show-info").show();
-      $(".size-pizza").text(newPizza.sizePizza);
-      $(".meat-pizza").text(newPizza.meatPizza);
-      $(".veggie-pizza").text(newPizza.veggiePizza);
+      $(".size-pizza").text(newPizza.pizzaText());
+      // $(".meat-pizza").text("with " + newPizza.meatPizza);
+      // $(".veggie-pizza").text("and " + newPizza.veggiePizza);
     });//end click fxn
 
     $(".remove").click(function(){
