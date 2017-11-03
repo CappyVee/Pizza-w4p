@@ -30,6 +30,15 @@ _End of Week Three project. The goal is to use constructors and prototypes to re
  example:
  LG Pepperoni and Green Pepper Pizza = $15
 
+ TODO LIST:
+  Build form, make sure the script is identifying the inputs correctly
+
+  Build Pizza constructor to build new pizza Objects
+
+  Build Prototype to calculate price of pizza objects created by constructor
+
+  Display information to user (output) when they click submit, based on size and toppings.
+
 * _clone repository_
 * _extract zip file_
 * _open index.html in a web browser compatible with jQuery 3.2.1_
