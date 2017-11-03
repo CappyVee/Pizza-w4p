@@ -65,7 +65,7 @@ Pizza.prototype.pizzaCost = function() {
   } else if (this.veggiePizza == "onion-veg") {
     pizzaPrice += 3;
   }
-  return "<h5>Your pizza will cost: $" + pizzaPrice + "<p class='remove'>Nevermind?</p>";
+  return "<h5>Your pizza will cost: $" + pizzaPrice + "<p class='remove'>Change your order?</p>";
 }//end pizzaCost prototype
 
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
 
     var newPizza = new Pizza(pizzaSize, pizzaMeat, pizzaVeggie);
     // alert(newPizza.pizzaCost());
-    $("ul#storePizzaResults").append("<li><span class='listInfo'>" + newPizza.pizzaCost() + "</span></li>")
+    $("ol#storePizzaResults").append("<li><span class='listInfo'>" + newPizza.pizzaCost() + "</span></li>")
 
     $(".listInfo").last().click(function(){
       $(".show-info").show();

@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <meta charset="utf-8">
     <title>Pizza Order</title>
   </head>
@@ -21,7 +22,7 @@
       <div class="row">
         <div class="col-lg-4">
           <form id="order-form">
-            <label class="qtext">Pizza Size</label>
+            <label class="qtext">Pizza Size:</label>
             <select id="size-question" name="pizza-size">
               <option value="sm-pizza">Small</option>
               <option value="md-pizza">Medium</option>
@@ -29,14 +30,14 @@
               <option value="xl-pizza">Extra Large</option>
             </select>
             <hr>
-            <label class="qtext">Meat Topping</label>
+            <label class="qtext">Meat Topping:</label>
             <select id="meat-question" name="meat-topping">
               <option value="no-meat">None</option>
               <option value="pepperoni-meat">Pepperoni</option>
               <option value="sausage-meat">Sausage</option>
             </select>
             <hr>
-            <label class="qtext">Veggie Topping</label>
+            <label class="qtext">Veggie Topping:</label>
             <select id="veg-question" name="veggie-topping">
               <option value="no-veg">None</option>
               <option value="olive-veg">Olives</option>
@@ -49,18 +50,23 @@
         </div>
 
         <div class="col-lg-8 show-info">
-          <div class="jumbotron">
-            <img src="img/pizzadog.jpg" alt="pizzadog" id="pizzadog">
-            <h5>Time for <span class="eat">EAT</span></h5>
-            <p><span class="pizza-info"></span></p>
+          <div class="card group">
+            <div class="card-body">
+              <h5 class="card-title">Time for <span class="eat">EAT</span></h5>
+              <img src="img/pizzadog.jpg" alt="pizzadog" class="img-left">
+              <a href="https://en.wikipedia.org/wiki/Pizza">Learn more</a>
+              <hr>
+              <p class="pizza-info"></p>
+
+            </div>
           </div>
         </div>
       </div>
 
       <div class="display">
-        <ul id="storePizzaResults">
-
-        </ul>
+        <ol id="storePizzaResults">
+          <p class="list-of-prices">List of Pizza Prices(click price for more info):</p>
+        </ol>
       </div>
 
       </div>
