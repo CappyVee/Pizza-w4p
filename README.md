@@ -63,7 +63,7 @@ _End of Week Four project. The goal is to use constructors and prototypes to rec
 
 ## Known Bugs
 
-_The page display gets messed up when list items are added or information is displayed_
+_Display is easy to mess up with resizing or adding list items_
 
 ## Support and contact details
 
