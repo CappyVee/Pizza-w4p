@@ -1,3 +1,6 @@
 p {
   word-wrap: normal;
 }
+.show-info {
+  display: none;
+}

@@ -43,7 +43,16 @@ $(document).ready(function(){
     var pizzaSize = $("select#size-question").val();
     var pizzaMeat = $("select#meat-question").val();
     var pizzaVeggie = $("select#veg-question").val();
+
     var newPizza = new Pizza(pizzaSize, pizzaMeat, pizzaVeggie);
-    alert(newPizza.pizzaCost());
+    // alert(newPizza.pizzaCost());
+    $("ul#storePizzaResults").append("<li><span class='listInfo'>" + "Your pizza will cost $" + newPizza.pizzaCost() + "</span></li>")
+
+    $(".listInfo").last().click(function(){
+      $(".show-info").show();
+      $(".size-pizza").text(newPizza.sizePizza);
+      $(".meat-pizza").text(newPizza.meatPizza);
+      $(".veggie-pizza").text(newPizza.veggiePizza);
+    });//end click fxn
   });//submit fxn end
 });//doc ready fxn end

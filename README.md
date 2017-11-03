@@ -25,7 +25,7 @@ _End of Week Three project. The goal is to use constructors and prototypes to re
  None                       +$0
  Olives                     +$1
  Green Pepperoni            +$2
- Onion                      +$2.50
+ Onion                      +$3
 
  example:
  LG Pepperoni and Green Pepper Pizza = $15
