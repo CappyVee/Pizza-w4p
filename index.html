@@ -15,9 +15,51 @@
         <p><span>PIZZA STUFF OMG</span></p>
       </div>
       <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-4">
+          <form id="order-form">
+            <label class="qtext">Pizza Size</label>
+            <select id="size-question" name="pizza-size">
+              <option value="sm-pizza">Small</option>
+              <option value="md-pizza">Medium</option>
+              <option value="lg-pizza">Large</option>
+              <option value="xl-pizza">Extra Large</option>
+            </select>
+            <br>
+            <label class="qtext">Meat Topping</label>
+            <select id="meat-question" name="meat-topping">
+              <option value="no-meat">None</option>
+              <option value="pepperoni-meat">Pepperoni</option>
+              <option value="sausage-meat">Sausage</option>
+            </select>
+            <br>
+            <label class="qtext">Veggie Topping</label>
+            <select id="veg-question" name="veggie-topping">
+              <option value="no-veg">None</option>
+              <option value="olive-veg">Olives</option>
+              <option value="pepper-veg">Green Pepper</option>
+              <option value="onion-veg">Onion</option>
+            </select>
+            <br>
+            <button type="submit" name="button" class="btn btn-secondary">Order Pizza!</button>
+          </form>
+        </div>
+
+        <div class="col-lg-1">
 
         </div>
+
+        <div class="col-lg-7">
+          <div class="jumbotron">
+            <h1>HEADER</h1>
+            <p>TExt fl;sdaa;flsk;dfsksdfl;sdfkl;dfkl;sfk;slfksdfksdksdfdksfl;fksdlsdfkl;fksdl;sdfkldfkssdfkksdfdfksl;dsfk;dkl;sf</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="display">
+        <p><span id="pizzaResults">placeholder</span></p>
+      </div>
+
       </div>
     </div>
   </body>
