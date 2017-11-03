@@ -1,3 +1,18 @@
+body {
+  background-color: #ccc5c6;
+}
+.pizza-logo {
+  width: 20%;
+  float: right;
+}
+
+
+
+.jumbotron {
+  background-color: #e55965;
+  height: 250px;
+}
+
 p {
   word-wrap: normal;
 }
