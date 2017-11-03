@@ -33,7 +33,7 @@ Pizza.prototype.pizzaCost = function() {
   } else if (this.veggiePizza == "onion-veg") {
     pizzaPrice += 3;
   }
-  return pizzaPrice;
+  return "<h5>Your pizza will cost: $" + pizzaPrice + "<p class='remove'>Nevermind?</p>";
 }//end pizzaCost prototype
 
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
     var newPizza = new Pizza(pizzaSize, pizzaMeat, pizzaVeggie);
     // alert(newPizza.pizzaCost());
-    $("ul#storePizzaResults").append("<li><span class='listInfo'>" + "Your pizza will cost $" + newPizza.pizzaCost() + "</span></li>")
+    $("ul#storePizzaResults").append("<li><span class='listInfo'>" + newPizza.pizzaCost() + "</span></li>")
 
     $(".listInfo").last().click(function(){
       $(".show-info").show();
@@ -54,5 +54,10 @@ $(document).ready(function(){
       $(".meat-pizza").text(newPizza.meatPizza);
       $(".veggie-pizza").text(newPizza.veggiePizza);
     });//end click fxn
+
+    $(".remove").click(function(){
+      $(this).closest("li").remove();
+      $(".show-info").hide();
+    });//remove fxn end
   });//submit fxn end
 });//doc ready fxn end
