@@ -6,7 +6,7 @@
 
 ## Description
 
-_End of Week Three project. The goal is to use constructors and prototypes to receive user input and calculate/display the cost of a pizza given certain criteria.
+_End of Week Four project. The goal is to use constructors and prototypes to receive user input and calculate/display the cost of a pizza given certain criteria.
 
 ## Specifications
 -input                      output
@@ -39,15 +39,19 @@ _End of Week Three project. The goal is to use constructors and prototypes to re
 
   Display information to user (output) when they click submit, based on size and toppings.
 
+  Add functionality to build a list of pizzas, click to display full info, and click to redo an order by removing the list item
+
+  Style
+
 * _clone repository_
-* _extract zip file_
-* _open index.html in a web browser compatible with jQuery 3.2.1_
+* _(or) extract zip file_
+* _open index.html in your web browser_
 * _alternatively, follow the GH-Pages link:https://cappyvee.github.io/Pizza-w4p/
 
 
 ## Known Bugs
 
-__
+_The page display gets messed up when list items are added or information is displayed_
 
 ## Support and contact details
 
@@ -60,4 +64,4 @@ _HTML, CSS, Git, Javascript, jQuery, Bootstrap and a Google Font were used in th
 
 ### License
 
-Copyright (c) 2017-3077 **_{Chris Quattrocchi}_**
+Copyright (c) 2017 **_{Chris Quattrocchi}_**
